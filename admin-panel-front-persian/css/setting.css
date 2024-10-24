@@ -1,0 +1,124 @@
+
+.main-container{
+    padding: 20px;
+    margin-top: 5px;
+}
+.main-container h1{
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 50px;
+    color: var(--color-black);
+}
+.main-container>div{
+    padding: 20px 0;
+    color: var(--color-black);
+}
+.main-container>div>div{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-container>div>div input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: raleway;
+}
+.commit-changes button{
+    padding: 5px;
+    font-family: raleway;
+    border: 1px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--color-light);
+    color: var(--color-black);
+}
+.commit-changes button:hover{
+    background-color: teal;
+    color: white;
+}
+/* From Uiverse.io by cssbuttons-io */ 
+.cbx {
+    position: relative;
+    top: 1px;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+   }
+   
+   .cbx:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 7px;
+    height: 14px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+   }
+   
+   .lbl {
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+   }
+   
+   #cbx:checked ~ .cbx {
+    border-color: transparent;
+    background: #6871f1;
+    animation: jelly 0.6s ease;
+   }
+   
+   #cbx:checked ~ .cbx:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+   }
+   
+   .cntr {
+    position: relative;
+    display: flex;
+   }
+   
+   @keyframes jelly {
+    from {
+     transform: scale(1, 1);
+    }
+   
+    30% {
+     transform: scale(1.25, 0.75);
+    }
+   
+    40% {
+     transform: scale(0.75, 1.25);
+    }
+   
+    50% {
+     transform: scale(1.15, 0.85);
+    }
+   
+    65% {
+     transform: scale(0.95, 1.05);
+    }
+   
+    75% {
+     transform: scale(1.05, 0.95);
+    }
+   
+    to {
+     transform: scale(1, 1);
+    }
+   }
+   
+   .hidden-xs-up {
+    display: none!important;
+   }
+   

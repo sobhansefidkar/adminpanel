@@ -1,0 +1,164 @@
+.product-page-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    overflow-x: auto;
+}
+.search-product{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-width: 480px;
+}
+.search-product div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-product div span{
+    width: 120px;
+}
+.product-page-container .search-product input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray);
+}
+.product-page-container .search-product span{
+    color: var(--color-black);
+}
+.search-product-btn{
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.search-product-btn img{
+    width: 30px;
+}
+.add-product{
+    width: 130px;
+    padding: 5px;
+    font-family: raleway;
+    background-color: var(--color-light);
+    border: 1px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--color-black);
+    margin: 0 10px;
+    font-size: small;
+    text-align: center;
+}
+.add-product:hover{
+    background-color: teal;
+    color: white;
+}
+
+.product-page-container::-webkit-scrollbar {
+    height: 3px;
+}
+.product-page-container h1.page-title{
+    width: 20%;
+    margin: 30px 0;
+    border-bottom: 1px solid lightgray;
+    min-width: max-content;
+    color: var(--color-black);
+}
+.product-page-container h1.user-found-nothing{
+    text-align: center;
+}
+.product-page-container table {
+    width: 100%;
+    color: var(--color-black);
+}
+
+.product-page-container table th {
+    padding: 5px;
+    border-bottom: 1px solid var(--color-gray);
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.product-page-container table tr td {
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.product-page-container table tr td:nth-child(1) {
+    width: 20px;
+}
+
+.product-page-container table tr td button {
+    cursor: pointer;
+    margin: 0 10px  ;
+    color: var(--color-black);
+    transition: 0.5s;
+    background-color: var(--color-light);
+}
+
+.product-page-container table tr td .remove-product {
+    padding: 5px;
+    font-family: raleway;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid crimson;
+}
+.product-page-container table tr td .remove-product:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.product-page-container table tr td .detail-product {
+    padding: 5px;
+    font-family: raleway;
+    border: none;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid teal;
+    font-size: small;
+    color: var(--color-black);
+}
+.product-page-container table tr td .detail-product:hover{
+    background-color: teal;
+    color: white;
+}
+.product-image{
+    width: 40px;
+    border-radius: 50%;
+}
+.product-colors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+}
+.product-colors li{
+    width: max-content;
+}
+.pagination-products-btns {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    min-width: 480px;
+}
+
+.pagination-products-btns li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--color-black);
+}
+
+.pagination-products-btns li.active {
+    background-color: var(--color-blue);
+    color: white;
+}
